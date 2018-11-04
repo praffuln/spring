@@ -52,6 +52,8 @@ public class EmployeeCollector {
 			String organization = employeeFields[4] != null ? employeeFields[4].trim() : employeeFields[4];
 			EmployeeDataManager.addEmployee(new Employee(firstName, lastName, experienceInMonthsIntegerValue,
 					ageInYearsIntegerValue, organization));
+		} else {
+			System.out.println("There is less or more number of employee fields.");
 		}
 
 	}
